@@ -10,7 +10,7 @@ global ac1
 ac1 = '0'       # Stores the current arithmetic operator
 
 def cl_e1():
-    """Clears the entry field and resets it to '0'."""
+    #"""Clears the entry field and resets it to '0'."""
     global b1
     e1.config(state='normal')       # Enable widget to modify text
     e1.delete(0, 'end')             # Clear all text
@@ -18,7 +18,7 @@ def cl_e1():
     e1.config(state='readonly')     # Set back to read-only for user safety
 
 def ins_txt0():
-    """Fetches the text from button 0 and inserts it into the entry field."""
+    #"""Fetches the text from button 0 and inserts it into the entry field."""
     global a0
     a0 = btn0.cget("text")
     e1.config(state='normal')
@@ -90,7 +90,7 @@ def ins_txt9():
     e1.config(state='readonly')
 
 def g_en0():
-    """Sets addition operator and stores the first number."""
+    #"Sets addition operator and stores the first number."""
     global ac1, b1
     ac1 = '+'
     b1 = float(e1.get())
@@ -99,7 +99,7 @@ def g_en0():
     e1.config(state='readonly')
 
 def g_en1():
-    """Handles subtraction or negative number input logic."""
+    #"Handles subtraction or negative number input logic."""
     global ac1, b1, c
     ac1 = '-'
     c = e1.get()
@@ -115,7 +115,7 @@ def g_en1():
         e1.config(state='readonly')
 
 def g_en2():
-    """Sets multiplication operator and stores the first number."""
+    #""Sets multiplication operator and stores the first number."""
     global ac1, b1
     ac1 = '*'
     b1 = float(e1.get())
@@ -124,7 +124,7 @@ def g_en2():
     e1.config(state='readonly')
 
 def g_en3():
-    """Sets division operator and stores the first number."""
+    #""Sets division operator and stores the first number."""
     global ac1, b1
     ac1 = '/'
     b1 = float(e1.get())
@@ -133,7 +133,7 @@ def g_en3():
     e1.config(state='readonly')
 
 def g_en5():
-    """Sets power/exponentiation operator."""
+    #""Sets power/exponentiation operator."""
     global ac1, b1
     ac1 = '^'
     b1 = float(e1.get())
@@ -142,7 +142,7 @@ def g_en5():
     e1.config(state='readonly')
 
 def g_en6():
-    """Instantly calculates the square root of the current number."""
+    #"Instantly calculates the square root of the current number."""
     global ac1, b1
     ac1 = '^1/n'
     b1 = float(e1.get())
@@ -153,7 +153,7 @@ def g_en6():
     e1.config(state='readonly')
 
 def g_en4():
-    """The 'Equal' button logic: performs the math based on stored operator."""
+    #The 'Equal' button logic: performs the math based on stored operator."""
     global b1, b2, rez, ac1, c
     e1.config(state='normal')
     c = e1.get()
@@ -190,7 +190,7 @@ def g_en4():
     ac1 = 0 # Reset operator
 
 def dot():
-    """Inserts a decimal point."""
+    #"""Inserts a decimal point."""
     global a1
     a1 = btn16.cget("text")
     e1.config(state='normal')
@@ -198,7 +198,7 @@ def dot():
     e1.config(state='readonly')
 
 def delete():
-    """Backspace logic: deletes the last character or resets to '0'."""
+    #"""Backspace logic: deletes the last character or resets to '0'."""
     global c1, c2
     c1 = e1.get()
     c2 = len(c1)
