@@ -19,75 +19,146 @@ def cl_e1():
 
 def ins_txt0():
     #"""Fetches the text from button 0 and inserts it into the entry field."""
-    global a0
+    global a0,c3
     a0 = btn0.cget("text")
-    e1.config(state='normal')
-    e1.insert(tk.END, a0)
-    e1.config(state='readonly')
+    c3=e1.get()
+    if c3=='0'or c3=='0.0':
+        e1.config(state='normal')
+        e1.delete(0, 'end')
+        e1.insert(tk.END, a0)
+        e1.config(state='readonly')
+    else :
+        e1.config(state='normal')
+        e1.insert(tk.END, a0)
+        e1.config(state='readonly')
+
 
 # Functions ins_txt1 through ins_txt9 follow the same logic as ins_txt0
 def ins_txt1():
-    global a1
-    a1 = btn1.cget("text")
-    e1.config(state='normal')
-    e1.insert(tk.END, a1)
-    e1.config(state='readonly')
+    global a0,c3
+    a0 = btn1.cget("text")
+    c3=e1.get()
+    if c3=='0'or c3=='0.0':
+        e1.config(state='normal')
+        e1.delete(0, 'end')
+        e1.insert(tk.END, a0)
+        e1.config(state='readonly')
+    else :
+        e1.config(state='normal')
+        e1.insert(tk.END, a0)
+        e1.config(state='readonly')
 
 def ins_txt2():
-    global a2
-    a2 = btn2.cget("text")
-    e1.config(state='normal')
-    e1.insert(tk.END, a2)
-    e1.config(state='readonly')
+    global a0,c3
+    a0 = btn2.cget("text")
+    c3=e1.get()
+    if c3=='0' or c3=='0.0':
+        e1.config(state='normal')
+        e1.delete(0, 'end')
+        e1.insert(tk.END, a0)
+        e1.config(state='readonly')
+    else :
+        e1.config(state='normal')
+        e1.insert(tk.END, a0)
+        e1.config(state='readonly')
 
 def ins_txt3():
-    global a3
-    a3 = btn3.cget("text")
-    e1.config(state='normal')
-    e1.insert(tk.END, a3)
-    e1.config(state='readonly')
+    global a0,c3
+    a0 = btn3.cget("text")
+    c3=e1.get()
+    if c3=='0' or c3=='0.0':
+        e1.config(state='normal')
+        e1.delete(0, 'end')
+        e1.insert(tk.END, a0)
+        e1.config(state='readonly')
+    else :
+        e1.config(state='normal')
+        e1.insert(tk.END, a0)
+        e1.config(state='readonly')
 
 def ins_txt4():
-    global a4
-    a4 = btn4.cget("text")
-    e1.config(state='normal')
-    e1.insert(tk.END, a4)
-    e1.config(state='readonly')
+    global a0,c3
+    a0 = btn4.cget("text")
+    c3=e1.get()
+    if c3=='0' or c3=='0.0':
+        e1.config(state='normal')
+        e1.delete(0, 'end')
+        e1.insert(tk.END, a0)
+        e1.config(state='readonly')
+    else :
+        e1.config(state='normal')
+        e1.insert(tk.END, a0)
+        e1.config(state='readonly')
 
 def ins_txt5():
-    global a5
-    a5 = btn5.cget("text")
-    e1.config(state='normal')
-    e1.insert(tk.END, a5)
-    e1.config(state='readonly')
+    global a0,c3
+    a0 = btn5.cget("text")
+    c3=e1.get()
+    if c3=='0' or c3=='0.0':
+        e1.config(state='normal')
+        e1.delete(0, 'end')
+        e1.insert(tk.END, a0)
+        e1.config(state='readonly')
+    else :
+        e1.config(state='normal')
+        e1.insert(tk.END, a0)
+        e1.config(state='readonly')
 
 def ins_txt6():
-    global a6
-    a6 = btn6.cget("text")
-    e1.config(state='normal')
-    e1.insert(tk.END, a6)
-    e1.config(state='readonly')
+    global a0,c3
+    a0 = btn6.cget("text")
+    c3=e1.get()
+    if c3=='0' or c3=='0.0':
+        e1.config(state='normal')
+        e1.delete(0, 'end')
+        e1.insert(tk.END, a0)
+        e1.config(state='readonly')
+    else :
+        e1.config(state='normal')
+        e1.insert(tk.END, a0)
+        e1.config(state='readonly')
 
 def ins_txt7():
-    global a7
-    a7 = btn7.cget("text")
-    e1.config(state='normal')
-    e1.insert(tk.END, a7)
-    e1.config(state='readonly')
+    global a0,c3
+    a0 = btn7.cget("text")
+    c3=e1.get()
+    if c3=='0' or c3=='0.0':
+        e1.config(state='normal')
+        e1.delete(0, 'end')
+        e1.insert(tk.END, a0)
+        e1.config(state='readonly')
+    else :
+        e1.config(state='normal')
+        e1.insert(tk.END, a0)
+        e1.config(state='readonly')
 
 def ins_txt8():
-    global a8
-    a8 = btn8.cget("text")
-    e1.config(state='normal')
-    e1.insert(tk.END, a8)
-    e1.config(state='readonly')
+    global a0,c3
+    a0 = btn8.cget("text")
+    c3=e1.get()
+    if c3=='0' or c3=='0.0':
+        e1.config(state='normal')
+        e1.delete(0, 'end')
+        e1.insert(tk.END, a0)
+        e1.config(state='readonly')
+    else :
+        e1.config(state='normal')
+        e1.insert(tk.END, a0)
+        e1.config(state='readonly')
 
 def ins_txt9():
-    global a9
-    a9 = btn9.cget("text")
-    e1.config(state='normal')
-    e1.insert(tk.END, a9)
-    e1.config(state='readonly')
+    global a0,c3
+    a0 = btn9.cget("text")
+    c3=e1.get()
+    if c3=='0' or c3=='0.0':
+        e1.config(state='normal')
+        e1.delete(0, 'end')
+        e1.insert(tk.END, a0)
+        e1.config(state='readonly')
+    else :
+        e1.config(state='normal')
+        e1.insert(tk.END, a0)
+        e1.config(state='readonly')
 
 def g_en0():
     #"Sets addition operator and stores the first number."""
@@ -102,6 +173,11 @@ def g_en1():
     #"Handles subtraction or negative number input logic."""
     global ac1, b1, c
     ac1 = '-'
+    c = e1.get()
+    if c=='0':
+        e1.config(state='normal')
+        e1.delete(0, 'end')
+        e1.config(state='readonly')
     c = e1.get()
     if not c:  # If entry is empty, treat '-' as a sign, not an operator
         e1.config(state='normal')
